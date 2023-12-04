@@ -1,0 +1,155 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>17.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{6aedf0d5-d743-474f-a555-7543cd7e95fa}</ProjectGuid>
+    <RootNamespace>CalibrationCamera</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <IncludePath>C:\Program Files\OpenNI2\Include;D:\Program Files\PCL1130\3rdParty\VTK\include\vtk-9.2;D:\Program Files\PCL1130\3rdParty\Qhull\include;D:\Program Files\PCL1130\3rdParty\FLANN\include;D:\Program Files\PCL1130\3rdParty\Eigen\eigen3;D:\Program Files\PCL1130\3rdParty\Boost\include\boost-1_80;D:\Program Files\PCL1130\include\pcl-1.13;D:\opencv4.5.5\opencv\build\include;D:\opencv4.5.5\opencv\build\include\opencv2;$(IncludePath)</IncludePath>
+    <LibraryPath>D:\opencv4.5.5\opencv\build\x64\vc15\lib;C:\Program Files\OpenNI2\Lib;D:\Program Files\PCL1130\lib;D:\Program Files\PCL1130\3rdParty\Boost\lib;D:\Program Files\PCL1130\3rdParty\FLANN\lib;D:\Program Files\PCL1130\3rdParty\Qhull\lib;D:\Program Files\PCL1130\3rdParty\VTK\lib;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>false</SDLCheck>
+      <PreprocessorDefinitions>_DEBUG;_CONSOLE;BOOST_USE_WINDOWS_H;NOMINMAX;_CRT_SECURE_NO_DEPRECATE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>false</ConformanceMode>
+      <EnableEnhancedInstructionSet>AdvancedVectorExtensions</EnableEnhancedInstructionSet>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>opencv_world455d.lib;OpenNI2.lib;pcl_commond.lib;pcl_featuresd.lib;pcl_filtersd.lib;pcl_iod.lib;pcl_io_plyd.lib;pcl_kdtreed.lib;pcl_keypointsd.lib;pcl_mld.lib;pcl_octreed.lib;pcl_outofcored.lib;pcl_peopled.lib;pcl_recognitiond.lib;pcl_registrationd.lib;pcl_sample_consensusd.lib;pcl_searchd.lib;pcl_segmentationd.lib;pcl_stereod.lib;pcl_surfaced.lib;pcl_trackingd.lib;pcl_visualizationd.lib;vtkcgns-9.2-gd.lib;vtkChartsCore-9.2-gd.lib;vtkCommonColor-9.2-gd.lib;vtkCommonComputationalGeometry-9.2-gd.lib;vtkCommonCore-9.2-gd.lib;vtkCommonDataModel-9.2-gd.lib;vtkCommonExecutionModel-9.2-gd.lib;vtkCommonMath-9.2-gd.lib;vtkCommonMisc-9.2-gd.lib;vtkCommonSystem-9.2-gd.lib;vtkCommonTransforms-9.2-gd.lib;vtkDICOMParser-9.2-gd.lib;vtkDomainsChemistry-9.2-gd.lib;vtkDomainsChemistryOpenGL2-9.2-gd.lib;vtkdoubleconversion-9.2-gd.lib;vtkexodusII-9.2-gd.lib;vtkexpat-9.2-gd.lib;vtkFiltersAMR-9.2-gd.lib;vtkFiltersCore-9.2-gd.lib;vtkFiltersExtraction-9.2-gd.lib;vtkFiltersFlowPaths-9.2-gd.lib;vtkFiltersGeneral-9.2-gd.lib;vtkFiltersGeneric-9.2-gd.lib;vtkFiltersGeometry-9.2-gd.lib;vtkFiltersHybrid-9.2-gd.lib;vtkFiltersHyperTree-9.2-gd.lib;vtkFiltersImaging-9.2-gd.lib;vtkFiltersModeling-9.2-gd.lib;vtkFiltersParallel-9.2-gd.lib;vtkFiltersParallelImaging-9.2-gd.lib;vtkFiltersPoints-9.2-gd.lib;vtkFiltersProgrammable-9.2-gd.lib;vtkFiltersSelection-9.2-gd.lib;vtkFiltersSMP-9.2-gd.lib;vtkFiltersSources-9.2-gd.lib;vtkFiltersStatistics-9.2-gd.lib;vtkFiltersTexture-9.2-gd.lib;vtkFiltersTopology-9.2-gd.lib;vtkFiltersVerdict-9.2-gd.lib;vtkfmt-9.2-gd.lib;vtkfreetype-9.2-gd.lib;vtkGeovisCore-9.2-gd.lib;vtkgl2ps-9.2-gd.lib;vtkglew-9.2-gd.lib;vtkhdf5-9.2-gd.lib;vtkhdf5_hl-9.2-gd.lib;vtkImagingColor-9.2-gd.lib;vtkImagingCore-9.2-gd.lib;vtkImagingFourier-9.2-gd.lib;vtkImagingGeneral-9.2-gd.lib;vtkImagingHybrid-9.2-gd.lib;vtkImagingMath-9.2-gd.lib;vtkImagingMorphological-9.2-gd.lib;vtkImagingSources-9.2-gd.lib;vtkImagingStatistics-9.2-gd.lib;vtkImagingStencil-9.2-gd.lib;vtkInfovisCore-9.2-gd.lib;vtkInfovisLayout-9.2-gd.lib;vtkInteractionImage-9.2-gd.lib;vtkInteractionStyle-9.2-gd.lib;vtkInteractionWidgets-9.2-gd.lib;vtkIOAMR-9.2-gd.lib;vtkIOAsynchronous-9.2-gd.lib;vtkIOCesium3DTiles-9.2-gd.lib;vtkIOCGNSReader-9.2-gd.lib;vtkIOChemistry-9.2-gd.lib;vtkIOCityGML-9.2-gd.lib;vtkIOCONVERGECFD-9.2-gd.lib;vtkIOCore-9.2-gd.lib;vtkIOEnSight-9.2-gd.lib;vtkIOExodus-9.2-gd.lib;vtkIOExport-9.2-gd.lib;vtkIOExportGL2PS-9.2-gd.lib;vtkIOExportPDF-9.2-gd.lib;vtkIOGeometry-9.2-gd.lib;vtkIOHDF-9.2-gd.lib;vtkIOImage-9.2-gd.lib;vtkIOImport-9.2-gd.lib;vtkIOInfovis-9.2-gd.lib;vtkIOIOSS-9.2-gd.lib;vtkIOLegacy-9.2-gd.lib;vtkIOLSDyna-9.2-gd.lib;vtkIOMINC-9.2-gd.lib;vtkIOMotionFX-9.2-gd.lib;vtkIOMovie-9.2-gd.lib;vtkIONetCDF-9.2-gd.lib;vtkIOOggTheora-9.2-gd.lib;vtkIOParallel-9.2-gd.lib;vtkIOParallelXML-9.2-gd.lib;vtkIOPLY-9.2-gd.lib;vtkIOSegY-9.2-gd.lib;vtkIOSQL-9.2-gd.lib;vtkioss-9.2-gd.lib;vtkIOTecplotTable-9.2-gd.lib;vtkIOVeraOut-9.2-gd.lib;vtkIOVideo-9.2-gd.lib;vtkIOXML-9.2-gd.lib;vtkIOXMLParser-9.2-gd.lib;vtkjpeg-9.2-gd.lib;vtkjsoncpp-9.2-gd.lib;vtkkissfft-9.2-gd.lib;vtklibharu-9.2-gd.lib;vtklibproj-9.2-gd.lib;vtklibxml2-9.2-gd.lib;vtkloguru-9.2-gd.lib;vtklz4-9.2-gd.lib;vtklzma-9.2-gd.lib;vtkmetaio-9.2-gd.lib;vtknetcdf-9.2-gd.lib;vtkogg-9.2-gd.lib;vtkParallelCore-9.2-gd.lib;vtkParallelDIY-9.2-gd.lib;vtkpng-9.2-gd.lib;vtkpugixml-9.2-gd.lib;vtkRenderingAnnotation-9.2-gd.lib;vtkRenderingContext2D-9.2-gd.lib;vtkRenderingContextOpenGL2-9.2-gd.lib;vtkRenderingCore-9.2-gd.lib;vtkRenderingFreeType-9.2-gd.lib;vtkRenderingGL2PSOpenGL2-9.2-gd.lib;vtkRenderingHyperTreeGrid-9.2-gd.lib;vtkRenderingImage-9.2-gd.lib;vtkRenderingLabel-9.2-gd.lib;vtkRenderingLICOpenGL2-9.2-gd.lib;vtkRenderingLOD-9.2-gd.lib;vtkRenderingOpenGL2-9.2-gd.lib;vtkRenderingSceneGraph-9.2-gd.lib;vtkRenderingUI-9.2-gd.lib;vtkRenderingVolume-9.2-gd.lib;vtkRenderingVolumeOpenGL2-9.2-gd.lib;vtkRenderingVtkJS-9.2-gd.lib;vtksqlite-9.2-gd.lib;vtksys-9.2-gd.lib;vtkTestingRendering-9.2-gd.lib;vtktheora-9.2-gd.lib;vtktiff-9.2-gd.lib;vtkverdict-9.2-gd.lib;vtkViewsContext2D-9.2-gd.lib;vtkViewsCore-9.2-gd.lib;vtkViewsInfovis-9.2-gd.lib;vtkWrappingTools-9.2-gd.lib;vtkzlib-9.2-gd.lib;qhullcpp_d.lib;qhullstatic_d.lib;qhullstatic_rd.lib;qhull_rd.lib;flann-gd.lib;flann_cpp-gd.lib;flann_cpp_s-gd.lib;flann_s-gd.lib;libboost_atomic-vc143-mt-gd-x64-1_80.lib;libboost_bzip2-vc143-mt-gd-x64-1_80.lib;libboost_chrono-vc143-mt-gd-x64-1_80.lib;libboost_container-vc143-mt-gd-x64-1_80.lib;libboost_context-vc143-mt-gd-x64-1_80.lib;libboost_contract-vc143-mt-gd-x64-1_80.lib;libboost_coroutine-vc143-mt-gd-x64-1_80.lib;libboost_date_time-vc143-mt-gd-x64-1_80.lib;libboost_exception-vc143-mt-gd-x64-1_80.lib;libboost_fiber-vc143-mt-gd-x64-1_80.lib;libboost_filesystem-vc143-mt-gd-x64-1_80.lib;libboost_graph-vc143-mt-gd-x64-1_80.lib;libboost_graph_parallel-vc143-mt-gd-x64-1_80.lib;libboost_iostreams-vc143-mt-gd-x64-1_80.lib;libboost_json-vc143-mt-gd-x64-1_80.lib;libboost_locale-vc143-mt-gd-x64-1_80.lib;libboost_log-vc143-mt-gd-x64-1_80.lib;libboost_log_setup-vc143-mt-gd-x64-1_80.lib;libboost_math_c99-vc143-mt-gd-x64-1_80.lib;libboost_math_c99f-vc143-mt-gd-x64-1_80.lib;libboost_math_c99l-vc143-mt-gd-x64-1_80.lib;libboost_math_tr1-vc143-mt-gd-x64-1_80.lib;libboost_math_tr1f-vc143-mt-gd-x64-1_80.lib;libboost_math_tr1l-vc143-mt-gd-x64-1_80.lib;libboost_mpi-vc143-mt-gd-x64-1_80.lib;libboost_nowide-vc143-mt-gd-x64-1_80.lib;libboost_numpy310-vc143-mt-gd-x64-1_80.lib;libboost_prg_exec_monitor-vc143-mt-gd-x64-1_80.lib;libboost_program_options-vc143-mt-gd-x64-1_80.lib;libboost_python310-vc143-mt-gd-x64-1_80.lib;libboost_random-vc143-mt-gd-x64-1_80.lib;libboost_regex-vc143-mt-gd-x64-1_80.lib;libboost_serialization-vc143-mt-gd-x64-1_80.lib;libboost_stacktrace_noop-vc143-mt-gd-x64-1_80.lib;libboost_stacktrace_windbg-vc143-mt-gd-x64-1_80.lib;libboost_stacktrace_windbg_cached-vc143-mt-gd-x64-1_80.lib;libboost_system-vc143-mt-gd-x64-1_80.lib;libboost_test_exec_monitor-vc143-mt-gd-x64-1_80.lib;libboost_thread-vc143-mt-gd-x64-1_80.lib;libboost_timer-vc143-mt-gd-x64-1_80.lib;libboost_type_erasure-vc143-mt-gd-x64-1_80.lib;libboost_unit_test_framework-vc143-mt-gd-x64-1_80.lib;libboost_wave-vc143-mt-gd-x64-1_80.lib;libboost_wserialization-vc143-mt-gd-x64-1_80.lib;libboost_zlib-vc143-mt-gd-x64-1_80.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="CalibrationDefine.h" />
+    <ClInclude Include="M3dRecontruct.hpp" />
+    <ClInclude Include="MAngle2MatrixTool.hpp" />
+    <ClInclude Include="MCamCalibration.hpp" />
+    <ClInclude Include="MPointsCloudPre.hpp" />
+    <ClInclude Include="MHandEyeCalibration.hpp" />
+    <ClInclude Include="MLasCalibration.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="M3dRecontruct.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="MCamCalibration.cpp" />
+    <ClCompile Include="MHandEyeCalibration.cpp" />
+    <ClCompile Include="MLasCalibration.cpp" />
+    <ClCompile Include="MPointsCloudPre.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
